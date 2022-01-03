@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:url("https://www.fdanews.com/ext/resources/Homepage/pharma-home.jpg?1576034918");
+    background-size: cover;
+    background-position:center;
+}
+.navbar{
+    width:100%;
+    margin: auto;
+    left: 50px;
+    padding: 35px 0; 
+    display:flexbox;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position:relative;
+    left:900px;
+    
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.navbar ul li ::after{
+    content:'';
+    height: 3px;
+    width: 0;
+    background:white;
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li :hover::after{
+    width:100%;
+}
+.content{
+    width:80%;
+    position: absolute;
+    top:40%;
+    transform:translateY(-50%);
+    text-align: center;
+    color:white;
+    padding-left: 150px;
+}
+.content h1{
+    font-size: 70px;
+    margin-top: 80px;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 130;
+    line-height: 30px;
+    font-size: large;
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20ox 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:2px solid rgba(26, 226, 26, 0.959);
+    background:transparent;
+    overflow: hidden;
+    position: relative;
+    color:goldenrod;
+    cursor: pointer;
+}
+span{
+   background: rgb(2, 2, 46);
+    height:900px;
+    width:100%;
+    position: absolute;
+    left:0;
+    top:90px;
+    z-index:-1;
+    transition:0.5s;
+}
+
+button:hover span{
+    width:100%;
+    color:green;
+}
+button:hover{
+    border:none;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    padding:70px;
+}
+
+.box-container .box{
+    padding:10px;
+    border-radius: 10px;
+    background: white;
+    border:2px solid;
+    text-align: center;
+}
+
+.box-container .box .icon{
+    margin-top: 10px ;
+}
+.title{
+    color:rgb(111, 25, 190);
+    
+}
